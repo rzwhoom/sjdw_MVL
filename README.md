@@ -8,4 +8,4 @@
 #### Arduino小车运行xiaoche.ino程序
 #### Android手机运行ITEAD-Wifi-Robot程序，控制Arduino小车运动
 #### OpenMV运行gettag.py
-#### 笔记本启动Jupyter Lab，运行sjdw.ipynb
+#### 笔记本启动Jupyter Lab，运行sjdw.ipynb或者启动Anaconda Prompt，先进入文件夹，然后python sjdw.py
