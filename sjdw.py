@@ -87,12 +87,12 @@ canvas.get_tk_widget().grid(row = 2, column = 0, columnspan = 7) #使用grid定�
 label = tk.Label(master = root, text = '视觉定位', font = zt)            #添加标签对象
 label.grid(row = 0, column = 0, pady = 20, padx = 10, columnspan = 7)   #使用grid定位，第一行，第一列，横跨7列（合并第一行）
 button1 = tk.Button(master = root, text = '开始定位', command = dwstart) #添加按钮对象
-button1.grid(row = 1, column = 2) #使用grid定位，第二行，第五列
+button1.grid(row = 1, column = 2) #使用grid定位，第二行，第三列
 button2 = tk.Button(master = root, text = '停止定位', command = dwend)
-button2.grid(row = 1, column = 3) #使用grid定位，第二行，第六列
+button2.grid(row = 1, column = 3) #使用grid定位，第二行，第四列
 button2['state'] = tk.DISABLED    #button2不可用
 button3 = tk.Button(master = root, text = '退出程序', command = dwquit)
-button3.grid(row = 1, column = 4) #使用grid定位，第二行，第七列
+button3.grid(row = 1, column = 4) #使用grid定位，第二行，第五列
 
 ani = animation.FuncAnimation(fig, animate, interval = 100) #添加动画
 tk.mainloop()
