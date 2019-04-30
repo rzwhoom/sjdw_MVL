@@ -73,8 +73,10 @@ def animate(i):
 root = tk.Tk()
 root.wm_title('基于机器视觉的定位与导航_视觉定位') #窗口标题栏设置
 root.iconbitmap('tb.ico')                       #窗口标题栏图标
+root.geometry('960x800+960+0')                  #窗口大小及位置
+root.resizable(width = False, height = False)   #固定窗口大小
 
-fig = Figure(figsize = (8, 6), dpi = 100)       #设置图像大小
+fig = Figure(figsize = (9.6, 7.2), dpi = 100)   #设置图像大小
 a = fig.add_subplot(111)
 a.set_facecolor('whitesmoke')
 
@@ -83,14 +85,14 @@ canvas.draw()
 canvas.get_tk_widget().grid(row = 2, column = 0, columnspan = 7) #使用grid定位，第三行，第一列，横跨7列（合并第三行）
 
 label = tk.Label(master = root, text = '视觉定位', font = zt)            #添加标签对象
-label.grid(row = 0, column = 0, pady = 10, padx = 10, columnspan = 7)   #使用grid定位，第一行，第一列，横跨7列（合并第一行）
+label.grid(row = 0, column = 0, pady = 20, padx = 10, columnspan = 7)   #使用grid定位，第一行，第一列，横跨7列（合并第一行）
 button1 = tk.Button(master = root, text = '开始定位', command = dwstart) #添加按钮对象
-button1.grid(row = 1, column = 4) #使用grid定位，第二行，第五列
+button1.grid(row = 1, column = 2) #使用grid定位，第二行，第五列
 button2 = tk.Button(master = root, text = '停止定位', command = dwend)
-button2.grid(row = 1, column = 5) #使用grid定位，第二行，第六列
+button2.grid(row = 1, column = 3) #使用grid定位，第二行，第六列
 button2['state'] = tk.DISABLED    #button2不可用
 button3 = tk.Button(master = root, text = '退出程序', command = dwquit)
-button3.grid(row = 1, column = 6) #使用grid定位，第二行，第七列
+button3.grid(row = 1, column = 4) #使用grid定位，第二行，第七列
 
 ani = animation.FuncAnimation(fig, animate, interval = 100) #添加动画
 tk.mainloop()
