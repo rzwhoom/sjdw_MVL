@@ -1,3 +1,4 @@
+//arduino5\8\9控制左电机，6\10\11控制右电机
 long unsigned nowti;
 long unsigned passti=0;
 byte bt;
@@ -46,14 +47,14 @@ void sszz()//顺时针转
   analogWrite(5,150);
   digitalWrite(10,LOW);
   digitalWrite(11,HIGH);
-  analogWrite(6,0);
+  analogWrite(6,50);
 }
 
 void nszz()//逆时针转
 {
   digitalWrite(8,LOW);
   digitalWrite(9,HIGH);
-  analogWrite(5,0);
+  analogWrite(5,50);
   digitalWrite(10,LOW);
   digitalWrite(11,HIGH);
   analogWrite(6,150);
