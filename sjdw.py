@@ -25,6 +25,7 @@ def dwend():
     os.system('taskkill /F /IM py.exe')
     
 def dwquit():
+    os.system('taskkill /F /IM py.exe')
     with open(r'data\zuobiao.csv', 'w', newline = '') as f1:
         w = csv.writer(f1)
         w.writerow(['id', 'xd', 'yd', 'jiaodu', 'i']) #清空zuobiao.csv
@@ -73,7 +74,7 @@ def animate(i):
 root = tk.Tk()
 root.wm_title('基于机器视觉的定位与导航_视觉定位') #窗口标题栏设置
 root.iconbitmap('tb.ico')                       #窗口标题栏图标
-root.geometry('960x800+960+0')                  #窗口大小及位置
+root.geometry('960x900+960+0')                  #窗口大小及位置
 root.resizable(width = False, height = False)   #固定窗口大小
 
 fig = Figure(figsize = (9.6, 7.2), dpi = 100)   #设置图像大小
