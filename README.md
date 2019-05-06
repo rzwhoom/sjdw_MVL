@@ -6,6 +6,6 @@
 #### 笔记本 IP(DHCP by Tp_Link)
 ## 实验操作
 #### Arduino小车运行xiaoche.ino程序
-#### Android手机运行ITEAD-Wifi-Robot程序，控制Arduino小车运动
+#### Android手机运行ITEAD-Wifi-Robot程序或笔记本运行ykxc.py，控制Arduino小车运动
 #### OpenMV运行gettag.py
 #### 笔记本启动Jupyter Lab，运行sjdw.ipynb或者启动Anaconda Prompt，先进入文件夹，然后python sjdw.py
